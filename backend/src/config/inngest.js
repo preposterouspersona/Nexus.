@@ -29,7 +29,7 @@ const syncUser = inngest.createFunction(
     const { id } = event.data;
     await User.deleteOne({ clerkId: id });
 
-    await deleteStreamUser(id.toString());
+    
   }
 );
 
